@@ -1,0 +1,64 @@
+.Leoncenter{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(92, 92, 219);
+    border: 3px solid pink;
+    padding: 60px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.slogan{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.607);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 20px 30px;
+    margin: 20px auto ;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+a.link{
+    color: rgb(112, 234, 234);
+    padding: 0 20px;
+    border-radius: 40px;
+}
+
+a.link:hover{
+    background-color: rgba(0, 237, 237, 0.289);
+    color: black;
+    
+}
+
+.xunb{
+    font-size: 20px;
+    font-weight: 1100;
+}
+
+.xungo{
+    font-size: 60;
+    text-align: center;
+}
+
+#about{
+    background-color: #E6E4F2;
+    background-image: url("../assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#callme{
+    background-color: #E6E4F2;
+}
+
+#about h1{
+    color: #584EA3;
+}
