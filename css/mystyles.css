@@ -77,3 +77,91 @@ a.link:hover{
 #interests p{
     font-size: larger;
 }
+
+
+.custom-photo-flex-container {
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: nowrap ;
+    width: 100% ;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.custom-photo-flex-container .photo-card {
+    flex: 1 ; 
+    width: 33.333% ;
+    max-width: 33.333% ;
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+
+.custom-photo-flex-container .photo-img-wrapper img {
+    width: 100% ;
+    height: auto ;
+    display: block ;
+}
+
+.photo-info{
+    text-align: center;
+}
+
+.flex-grow-1{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.custom-photo-flex-container{
+    margin-bottom: -50px;
+}
+
+<!--照片-->
+.albumsss {
+    padding: 40px;
+    background: #f0f1f3; /* 背景淺灰色 */
+}
+
+.albumsss h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.interests-grid {
+    display: flex; /* 開啟 Flexbox 佈局，讓子元素橫向排列 */
+    gap: 30px; /* 每個卡片之間的固定均等間隙 */
+}
+
+.interest-card  {
+    flex: 1; /* 讓每個卡片自動平分容器的剩餘空間 */
+    background: #fff; /* 卡片白色背景 */
+    border-radius: 8px; /* 輕微圓角 */
+    overflow: hidden; /* 確保內容不會撐開圓角 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 添加卡片陰影效果 */
+    display: flex;
+    flex-direction: column; /* 內容垂直排列 */
+}
+
+.interest-card img {
+    width: 100%; /* 圖片寬度滿版 */
+    object-fit: cover; /* 確保不同比例的圖片乾淨裁切填滿，不變形 */
+    display: block;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-text h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
