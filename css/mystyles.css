@@ -1,3 +1,12 @@
+
+body, h1, h2, h3, h4, h5, h6, .nav-link, p, div, span, table, th, td {
+    font-family: "Noto Serif TC", serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
 .Leoncenter{
     text-align: center;
     color: rgb(0, 0, 0);
@@ -11,13 +20,15 @@
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.607);
-    border: 3px solid rgb(0, 0, 0);
-    padding: 30px;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px 30px 50px 30px;
     border-radius: 20px 30px;
-    margin: 20px auto ;
-    width: 50%;
-    height: 100px;
-    overflow: auto;
+    margin: 10px auto ;
+    width: 75%;
+    white-space: pre-line;
+    font-size: 25px;
+
+    
 }
 
 .center{
@@ -61,4 +72,8 @@ a.link:hover{
 
 #about h1{
     color: #584EA3;
+}
+
+#interests p{
+    font-size: larger;
 }
