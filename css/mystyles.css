@@ -58,6 +58,11 @@ a.link:hover{
     text-align: center;
 }
 
+.fa-solid fa-angles-down{
+    color: #584EA3;
+    background-color: #333;
+}
+
 #about{
     background-color: #E6E4F2;
     background-image: url("../assets/img/bg.jpg");
