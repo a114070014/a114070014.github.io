@@ -5,65 +5,60 @@ body, h1, h2, h3, h4, h5, h6, .nav-link, p, div, span, table, th, td {
     font-style: normal;
 }
 
-
-
 .Leoncenter {
     text-align: center;
     color: rgb(0, 0, 0);
     padding: 60px;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5) ;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3) ;
 }
 
-.slogan{
+.slogan {
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.607);
     border: 5px solid rgb(0, 0, 0);
     padding: 10px 30px 50px 30px;
     border-radius: 20px 30px;
-    margin: 10px auto ;
+    margin: 10px auto;
     width: 75%;
     white-space: pre-line;
     font-size: 15px;
-
-    
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-a.link{
+a.link {
     color: rgb(112, 234, 234);
     padding: 0 20px;
     border-radius: 40px;
 }
 
-a.link:hover{
+a.link:hover {
     background-color: rgba(0, 237, 237, 0.289);
     color: black;
-    
 }
 
-.xunb{
+.xunb {
     font-size: 20px;
     font-weight: 1100;
 }
 
-.xungo{
-    font-size: 60;
+.xungo {
+    font-size: 60px;
     text-align: center;
 }
 
-.fa-solid fa-angles-down{
+.fa-solid.fa-angles-down {
     color: #584EA3;
     background-color: #333;
 }
 
-#about{
+#about {
     background-color: #E6E4F2;
     background-image: url("../assets/img/bg.jpg");
     background-repeat: no-repeat;
@@ -72,60 +67,26 @@ a.link:hover{
     background-size: cover;
 }
 
-#callme{
-    background-color: #E6E4F2;
-}
-
-#about h1{
+#about h1 {
     color: #584EA3;
 }
 
-#interests p{
+#interests p {
     font-size: larger;
 }
 
-
-.custom-photo-flex-container {
-    display: flex ;
-    flex-direction: row ;
-    flex-wrap: nowrap ;
-    width: 100% ;
-    margin: 0 ;
-    padding: 0 ;
-}
-
-.custom-photo-flex-container .photo-card {
-    flex: 1 ; 
-    width: 33.333% ;
-    max-width: 33.333% ;
-    margin: 0 ;
-    padding: 0 ;
-    box-sizing: border-box ;
-}
-
-.custom-photo-flex-container .photo-img-wrapper img {
-    width: 100% ;
-    height: auto ;
-    display: block ;
-}
-
-.photo-info{
+.photo-info {
     text-align: center;
 }
 
-.flex-grow-1{
+.flex-grow-1 {
     margin-bottom: 40px;
     margin-top: 20px;
 }
 
-.custom-photo-flex-container{
-    margin-bottom: -50px;
-}
-
-<!--照片-->
 .albumsss {
     padding: 40px;
-    background: #f0f1f3; 
+    background: #f0f1f3;
 }
 
 .albumsss h2 {
@@ -135,31 +96,31 @@ a.link:hover{
 }
 
 .interests-grid {
-    display: flex ;
-    flex-wrap: wrap ;      
-    flex-direction: row ;
-    gap: 30px ;            
-    width: 100% ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
 }
 
 .interest-card {
-    
-    width: calc((100% - 60px) / 3) !important; 
-    flex: none ;            
-    box-sizing: border-box ;
-    background: #fff;                 
-    border-radius: 8px;             
-    overflow: hidden;                  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    width: calc((100% - 60px) / 3);
+    flex: none;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;         
-    margin-bottom: 10px;            
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .interest-card img {
-    width: 100% ;
-  
-    object-fit: cover ;    
-    display: block ;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
 .card-text {
@@ -179,36 +140,69 @@ a.link:hover{
     line-height: 1.6;
 }
 
-<!--作品集-->
-/* 1. 父容器保持開啟換行與間距 */
 .interests-grid.four-columns {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    flex-direction: row !important;
-    gap: 30px !important; /* 保持與原本相同的 30px 間隙 */
-    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
 }
 
-/* 2. 針對四格排版的子卡片重新計算寬度 */
 .interests-grid.four-columns .interest-card {
-    /* 核心修改：100% 總寬度減去 3 個間隙 (30px * 3 = 90px)，再平分 4 等份 */
-    width: calc((100% - 90px) / 4) !important; 
-    
-    flex: none !important; /* 鎖定寬度 */
-    box-sizing: border-box !important;
+    width: calc((100% - 90px) / 4);
+    flex: none;
+    box-sizing: border-box;
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /* 控制若超過四個換行時的上下排間距 */
+    margin-bottom: 20px;
 }
 
-/* 3. 確保四格排版下的圖片高度依然整齊（高度可根據視覺調整，四格較窄，建議 200px 左右較和諧） */
 .interests-grid.four-columns .interest-card img {
-    width: 100% !important;
-    height: 200px !important; /* 四格排版寬度變窄，微調縮短圖片高度 */
-    object-fit: cover !important;
-    display: block !important;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
+
+.interests-grid.four-columns .card-text {
+    padding: 20px;
+}
+
+.interests-grid.four-columns .card-text h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.interests-grid.four-columns .card-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#callme {
+    background-color: #E6E4F2;
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#callme .resume-section-content {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
