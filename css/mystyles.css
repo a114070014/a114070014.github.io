@@ -7,13 +7,14 @@ body, h1, h2, h3, h4, h5, h6, .nav-link, p, div, span, table, th, td {
 
 
 
-.Leoncenter{
+.Leoncenter {
     text-align: center;
     color: rgb(0, 0, 0);
-    background-color: rgb(92, 92, 219);
-    border: 3px solid pink;
     padding: 60px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5) ;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3) ;
 }
 
 .slogan{
@@ -119,7 +120,7 @@ a.link:hover{
 <!--照片-->
 .albumsss {
     padding: 40px;
-    background: #f0f1f3; /* 背景淺灰色 */
+    background: #f0f1f3; 
 }
 
 .albumsss h2 {
@@ -129,24 +130,31 @@ a.link:hover{
 }
 
 .interests-grid {
-    display: flex; /* 開啟 Flexbox 佈局，讓子元素橫向排列 */
-    gap: 30px; /* 每個卡片之間的固定均等間隙 */
+    display: flex ;
+    flex-wrap: wrap ;      
+    flex-direction: row ;
+    gap: 30px ;            
+    width: 100% ;
 }
 
-.interest-card  {
-    flex: 1; /* 讓每個卡片自動平分容器的剩餘空間 */
-    background: #fff; /* 卡片白色背景 */
-    border-radius: 8px; /* 輕微圓角 */
-    overflow: hidden; /* 確保內容不會撐開圓角 */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 添加卡片陰影效果 */
+.interest-card {
+    
+    width: calc((100% - 60px) / 3) !important; 
+    flex: none ;            
+    box-sizing: border-box ;
+    background: #fff;                 
+    border-radius: 8px;             
+    overflow: hidden;                  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
     display: flex;
-    flex-direction: column; /* 內容垂直排列 */
+    flex-direction: column;         
+    margin-bottom: 10px;            
 }
 
 .interest-card img {
-    width: 100%; /* 圖片寬度滿版 */
-    object-fit: cover; /* 確保不同比例的圖片乾淨裁切填滿，不變形 */
-    display: block;
+    width: 100% ;
+  
+    object-fit: cover ;    
+    display: block ;
 }
 
 .card-text {
@@ -164,4 +172,38 @@ a.link:hover{
     font-size: 14px;
     color: #666;
     line-height: 1.6;
+}
+
+<!--作品集-->
+/* 1. 父容器保持開啟換行與間距 */
+.interests-grid.four-columns {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    gap: 30px !important; /* 保持與原本相同的 30px 間隙 */
+    width: 100% !important;
+}
+
+/* 2. 針對四格排版的子卡片重新計算寬度 */
+.interests-grid.four-columns .interest-card {
+    /* 核心修改：100% 總寬度減去 3 個間隙 (30px * 3 = 90px)，再平分 4 等份 */
+    width: calc((100% - 90px) / 4) !important; 
+    
+    flex: none !important; /* 鎖定寬度 */
+    box-sizing: border-box !important;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* 控制若超過四個換行時的上下排間距 */
+}
+
+/* 3. 確保四格排版下的圖片高度依然整齊（高度可根據視覺調整，四格較窄，建議 200px 左右較和諧） */
+.interests-grid.four-columns .interest-card img {
+    width: 100% !important;
+    height: 200px !important; /* 四格排版寬度變窄，微調縮短圖片高度 */
+    object-fit: cover !important;
+    display: block !important;
 }
