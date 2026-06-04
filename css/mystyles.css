@@ -59,13 +59,19 @@ a.link:hover {
 }
 
 #about {
-    background-color: #E6E4F2;
-    background-image: url("../assets/img/bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+background-color: #E6E4F2;
+background-image: url("../assets/img/bg.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+min-height: 100vh;
+width: 100%;
+padding-left: 0;
+padding-right: 0;
 }
+
+
 
 #about h1 {
     color: #584EA3;
